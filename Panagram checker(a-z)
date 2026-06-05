@@ -1,6 +1,0 @@
-s = input().lower()
-alphabet = set("abcdefghijklmnopqrstuvwxyz")
-if alphabet.issubset(set(s)):
-    print("Pangram")
-else:
-    print("Not Pangram")

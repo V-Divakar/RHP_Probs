@@ -1,0 +1,17 @@
+s = input().lower()
+alphabet = set("abcdefghijklmnopqrstuvwxyz")
+if alphabet.issubset(set(s)):
+    print("Pangram")
+else:
+    print("Not Pangram")
+
+# in uppercase 
+
+s = input().upper()
+
+for ch in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
+    if ch not in s:
+        print("Not Pangram")
+        break
+else:
+    print("Pangram")
